@@ -1,0 +1,26 @@
+Exercise 01 -- Constraints
+	---------------------------
+	1) Create table named 
+	lms_members
+	MEMBER_ID	varchar
+	MEMBER_NAME 	varchar	
+	CITY 		varchar	
+	DATE_REGISTER 	date
+	DATE_EXPIRE	date 
+	MEMBERSHIP_STATUS varchar
+	with constraints
+	  i) primary key constraint on MEMBER_ID
+	  ii) check constraint on DATE_REGISTER such that DATE_REGISTER >= '2022-11-16'
+	  iii) not null constraint on DATE_EXPIRE
+	  iv) unique and not null constraint on MEMBER_NAME 
+	2) drop all constraints 
+	3) apply all constraints again
+	4) Insert following data 
+	 
+	LM01	Nikita	Delhi	2023-11-16	2023-12-02	Permanent	
+	LM02	Rakesh	Pune	today's date	2024-12-02	Temporary	
+	null	Rohit	Mumbai	today's date	2022-12-02	Temporary	
+	LM03	Deepa	USA	2023-11-17	2023-12-02	Permanent	
+	LM04	Supriya	Ireland	2023-11-18	2023-12-02   	Temporary	
+	LM05	Silky	Delhi	2023-11-20	null		Permanent	
+		

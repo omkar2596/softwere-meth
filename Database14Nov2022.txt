@@ -1,0 +1,144 @@
+14 Nov 2022 Discussion:
+
+SQL (Structured Query Language)
+
+1.DDL
+Data Definition Language
+Name, Data? Define/format(Columns), Contraint, Store, Obects/instance, location, 
+
+Queries: Data Structure
+1. Table/Relation (Creation of a table/structure change)
+2. Rename Table
+3. Column Name change(strcture change)
+4. Type casting/Data type change of column (integer-->string)/data ype change (Structure change) (Alter)
+5. Table delete (Structure change)
+6. Constraint >=50% -->DAC(Btech)
+
+DML (Data Manipulation)
+1. insert data in table(Row)(insert)
+2. delete data/row (delete)
+3. value change of a data(upadte)
+4. select
+
+DCL(Data Control Language)
+permission give (Grant)
+back permission (Revoke)
+
+Transaction (20)
+commit (Change Saved)
+rollback (Transaction is not completed so rollback, go back to to initial state)
+Save point (Intermediate) (10th line save)
+
+
+1. Create database databasename;
+
+2. use databasename;
+
+3. create table tablename
+(
+columnname1 datatype(size),
+columnname2 datatype(size),
+);
+
+4. insert into databasename.tablename values(firstvale,'secondvalue');
+
+5. To print the output of a table 
+Question1: print all the detailes of students
+select * from tablename;
+// *----all columns+all rows(?)
+
+
+//* means all columns
+
+Question2: print all the registered student names.
+select studentname from tablename;
+// selected columns, all rows
+
+Question3: print all the details of 'deepika'.
+select * from tablename where condition;
+select * from enrolnment where 
+//selected rows + all columns 
+
+
+//selected rows + selected columns 
+select columnname from tablename where condition
+select phone from student where name='Radhika';
+
+
+select prn,phone from student where name='Radhika';
+
+Question: delete the record of Deepika
+delete from tablename where condition;
+delete from tablename;//DML// all rows will be deleted
+
+truncate and delete both are similar but not same.
+tring
+Question:
+
+1. Create a table employee with three columns 
+EmpId number, EmapName Varchar2(20), Mobile number(10), 
+salary number(6,2), departmentname varchar2(10)
+
+2. insert 10 values
+
+Print table
+
+3. delete 3rd row
+
+4. print table
+
+Desc tablename
+//show or describe the table structure and constraints imposed
+
+Column add/delete/update
+
+Add Column
+alter table tablename add column columnname datatype(size);
+alter table tablename add column (columnname datatype(size),columnname datatype(size));
+
+alter table enrolnment drop column tempaddress;
+
+alter table enrolnment modify column address varchar(30);
+
+Change column anme with the help of rename
+alter table enrolnment rename column address to permanentaddress;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Summary:
+a) DDL (Data Definition Language) [Changes at the level of column and table or struture, permanent changes]
+CREATE, DROP, ALTER, RENAME,TRUNCATE
+
+b) DML (Data Manipulation Language)[Changes at the level of data, Temporary changes] 
+INSERT,UPDATE,DELETE
+
+c) DCL ( Data Control Language) [give/takeback permission]
+GRANT REVOKE 
+
+d) TCL ( Transaction Control Language) [Always works on DML]
+COMMIT ROLLBACK SAVEPOINT
+
+e) DQL ( Data Query Language)
+SELECT
+
+
+
+
+
+

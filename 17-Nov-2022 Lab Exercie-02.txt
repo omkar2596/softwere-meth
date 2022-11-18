@@ -1,0 +1,26 @@
+
+1. Create the following table named “Product”.
+IELD NAME		DATATYPE(size)	CONSTRAINTS
+Prod_No			int		Primary Key, should start with letter 'p'
+Prod _Name	v	archar(20)	default value 'Charger
+price			decimal(6,2)	Not Null
+Date_of_purchase	date
+2. insert 3 records
+P01	Phone battery 	2000.40		'2022-11-14'
+P02	Phone charger	200.50		'2022-1-11'
+P01	samsung phone	20000		'2022-1-11'
+P03	samsung phone	20000
+C01	samsung charger 20000
+P04	samsung phone	Null
+
+3. show all the records in ascending order according to product name.
+4.  show all the records in desending order according to product name.
+5. show all the records in desending order according to price.
+6. show all the records in ascending order according to price.
+7. show all the records in ascending order according to price and product number.
+
+8. Find the product name whose name starts with ‘p’.
+9. Find the product name whose name starts with ‘s’ and ends with 'e'.
+10. Find the product names whose product is related to 'samsung'.
+11. Update the price of 'samsung phone with value 40000 whose product id is 'P04'.
+12. Rename the table bill to ‘Product_details’.

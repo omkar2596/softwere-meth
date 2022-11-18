@@ -1,0 +1,120 @@
+Like Operator?
+Name		age
+Shilpa		26
+Deepa		24
+Nikita
+Rakesh
+Bhuvnesh
+Deepika
+Niki
+Shamita Shetty	18
+S Nikita	29
+S Nikita Tri	18
+AS Nikita
+P
+
+Q1. 	List down details of those people whose name starts with letter 'S'.
+Output:	Shilpa
+	Shamita
+Ans1. 	select * from student_info where name like 'S%';
+%--any numbers of charcaters
+_--only one charcter
+
+Q2.	List down details of those people whose name is 'Shilpa'
+Ans2. 	select * from student_info where name='Shilpa';
+
+Q3. 	List down details of those people whose name starts with letter 'S' and ends with letter 'a'
+Output:	Shilpa
+Ans3. 	select * from student_info where name like 'S%a';
+
+Q4. 	List down details of those people whose name contains 'Niki'
+Output:	Nikita
+	Niki
+	S Nikita
+Ans4. 	select * from student_info where name like '%Niki%';
+
+Q4. 	List down details of those people whose whose name strats with 'n' and has two charcters after letter n and ends with 'i'
+Output:	Niki
+Ans4. 	select * from student_info where name like 'N__i';
+
+Q5. 	List down details of those people whose whose name has only one character.
+Output:	P
+Ans5. 	select * from student_info where name like '_';
+
+Q6. 	delete details of those people whose whose name starts with letter 'B'
+Output:	
+Ans6. 	delete from student_info where name like 'B%';
+
+Q6. 	update the age as 28 of those people whose whose name starts with letter 's'
+Input:	
+Name		age
+Shilpa		26
+Shamita Shetty	18
+S Nikita	29
+S Nikita Tri	18
+Output:	
+Name		age
+Shilpa		28
+Shamita Shetty	28
+S Nikita	28
+S Nikita Tri	28
+
+Ans6. 	update student_info set age = 28 where name like 'S%';
+
+Allow the product name starting with letter 'S' only.
+check constraint + like operator 'S%'
+
+Sorting?
+Ascending/Descending
+
+Name		age
+Shilpa		26
+Deepa		24
+Nikita
+Rakesh
+Bhuvnesh
+Deepika
+Niki
+Shamita Shetty	18
+S Nikita	29
+S Nikita Tri	18
+AS Nikita
+P
+
+select * from student_info order by Name;
+Input
+Name		age
+Shilpa		26
+Deepa		24
+Nikita		12
+Rakesh		16
+Bhuvnesh	14
+Deepika		18
+Niki		20
+Shamita Shetty	18
+
+Output:
+Name		age
+Bhuvnesh	14
+Deepa		24
+Deepika		18
+Niki		20
+Nikita		12
+Rakesh		16
+Shamita Shetty	18
+
+//printing/display
+//record will not be updated in sorted order
+//Asc/Desc
+//default is ascending order
+
+Question: Display records in descending order of those people whose age is greater than 18.
+Ans: select * from student_info where age>=18 order by Name Desc;
+
+<
+>
+<=
+>=
+and
+or
+not
